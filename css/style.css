@@ -1,0 +1,615 @@
+/* ==========================================================
+  RESET & GLOBAL STYLES
+========================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+html {
+  scroll-behavior: smooth;
+}
+  
+body {
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+}
+  
+/* ==========================================================
+  NAVBAR
+========================================================== */
+.cabecera {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  border-radius: 0 0 50px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+  
+.logo {
+  width: 500px;
+  height: auto;
+}
+  
+.navegacion-principal {
+  display: flex;
+  gap: 30px;
+}
+  
+.texto-animado {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: transparent;
+  background-image: linear-gradient(to right, #e84445 50%, #802424 50%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-position 0.8s ease;
+}
+  
+.texto-animado:hover {
+  background-position: -100% 0;
+}
+
+/* RESPONSIVE */
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .cabecera {
+    padding: 15px 40px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .texto-animado {
+    font-size: 30px;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+
+  /* NAVBAR */
+  .cabecera {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .navegacion-principal {
+    gap: 15px;
+  }
+
+  .texto-animado {
+    font-size: 22px;
+  }
+}
+  
+/* ==========================================================
+  PRESENTATION
+========================================================== */
+.body-block {
+  max-width: 1200px;
+  margin: 150px auto 50px auto;
+  padding: 92px;
+  border-radius: 15px;
+  background: #f5e1ce;
+  box-shadow: 0px 13px 16px 2px rgba(0,0,0,0.75);
+}
+  
+.bloquePresentacion {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+  
+.foto-presentacion {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+}
+  
+.textoPresentacion h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e84445;
+}
+  
+.textoPresentacion p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #802424;
+  margin-top: 10px;
+}
+  
+.restoPresentacion {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.restoPresentacion p {
+  font-size: 1.3rem;
+  color: #220a0a;
+}
+  
+.hablamos {
+  margin-top: 15px;
+}
+
+#correo {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #e84445;
+}
+  
+.btnCopy {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+  
+#btnCopyImg {
+  width: 22px;
+  transition: transform 0.2s ease;
+}
+  
+#btnCopyImg:hover {
+  transform: scale(1.2);
+}
+
+#msgCopy {
+  color: #220a0a;
+  font-size: 1rem;
+}
+
+.tick {
+  color: rgb(31, 123, 31);
+  margin-left: 6px;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  /* PRESENTATION */
+  .presentacion {
+    padding: 60px;
+  }
+
+  .textoPresentacion h1 {
+    font-size: 2rem;
+  }
+
+  .textoPresentacion p {
+    font-size: 1.2rem;
+  }
+
+  .restoPresentacion p, #correo {
+    font-size: 1.1rem;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  /* PRESENTATION */
+  .presentacion {
+    margin-top: 140px; 
+    padding: 40px 20px;
+  }
+
+  .bloquePresentacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto-presentacion {
+    width: 150px;
+  }
+
+  .textoPresentacion h1 {
+    font-size: 1.8rem;
+  }
+
+  .textoPresentacion p {
+    font-size: 1.1rem;
+  }
+
+  .restoPresentacion p {
+    font-size: 1rem;
+  }
+
+  #correo {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+  
+/* ==========================================================
+  SKILLS
+========================================================== */
+.skills {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+  
+.skill {
+  background: #ffffff;
+  border: 2px solid #e84445;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-size: 12px;
+  color: #220a0a;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  /* SKILLS */
+  .skill {
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+}
+
+/* ==========================================================
+  ABOUT ME
+========================================================== */
+#aboutMe {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  scroll-margin-top: 100px; /* altura del header */
+  color: #e84445;
+}
+
+.tarjetasSobreMi {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas */
+  gap: 20px;
+  margin-top: 50px;
+  max-width: 1200px;
+  margin: 30px auto 30px auto;
+}
+  
+.tarjeta {
+  background: #f5e1ce;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 13px 16px 2px rgba(0,0,0,0.75);
+}
+  
+.tarjeta h3 {
+  color: #e84445;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+  
+.tarjeta p {
+  color: #220a0a;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .tarjetasSobreMi {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  /* ABOUT ME */
+  #aboutMe {
+    font-size: 1.7rem;
+  }
+
+  .tarjeta h3 {
+    font-size: 1.2rem;
+  }
+
+  .tarjeta p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ==========================================================
+  PROJECTS
+========================================================== */
+#proyects {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  scroll-margin-top: 100px; /* altura del header */
+  color: #e84445;
+}
+
+.tarjetasProyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px auto 30px auto;
+}
+  
+.tarjetaProyecto {
+  background: #f5e1ce;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 13px 16px 2px rgba(0,0,0,0.75);
+  text-decoration: none;
+}
+  
+.imgProyecto {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+  
+.tarjetaProyecto h3 {
+  color: #e84445;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+  
+.tarjetaProyecto .tecnologias {
+  color: #220a0a;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+  
+.tarjetaProyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+/* RESPONSIVE */
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .tarjetasProyectos {
+    grid-template-columns: 1fr; 
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  
+  /* PROYECTS */
+  #proyects {
+    font-size: 1.7rem;
+  }
+
+  .tarjetaProyecto h3 {
+    font-size: 1.1rem;
+  }
+
+  .tarjetaProyecto .tecnologias {
+    font-size: 0.9rem;
+  }
+}
+  
+/* ==========================================================
+  CONTACT
+========================================================== */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 50px;
+  max-width: 1200px;
+  margin: 30px auto 30px auto;
+  text-align: center;
+}
+
+#contactMe {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  scroll-margin-top: 100px; /* altura del header */
+  color: #e84445;
+}
+
+.contact-correo {
+  text-decoration: none;
+  color: #802424;
+  font-size: 20px;
+}
+
+.fa-solid {
+  color: #802424;
+}
+
+.contact-redes {
+  text-decoration: none;
+}
+
+.fa-brands {
+  font-size: 30px;
+  padding-right: 10px;
+  color: #802424;
+
+}
+
+/* RESPONSIVE */
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+
+  /* CONTACT */
+  #contactMe {
+    font-size: 1.7rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact p, .contact-correo {
+    font-size: 1rem;
+  }
+
+  .fa-brands {
+    font-size: 26px;
+  }
+}
+  
+
+/* ==========================================================
+  FOOTER
+========================================================== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #555555;
+}
+
+/* RESPONSIVE */
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+
+  /* FOOTER */
+  .footer p {
+    font-size: 16px;
+  }
+
+}
+
+/* ==========================================================
+  PROJECT DETAIL PAGE
+========================================================== */
+.detalle-contenedor {
+    max-width: 900px;
+    margin: auto;
+    background: #131313;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px #000;
+}
+
+.detalle-titulo {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #e84445;
+}
+
+.detalle-imagen {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #000;
+    margin-bottom: 40px;
+}
+
+.detalle-texto,
+.detalle-bloque {
+    margin-bottom: 40px;
+}
+
+.detalle-texto h2,
+.detalle-bloque h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #e84445;
+}
+
+.detalle-texto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.detalle-tecnologias,
+.detalle-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.detalle-tecnologias li,
+.detalle-lista li {
+    font-size: 1.1rem;
+    background: #ffffff;
+    padding: 10px 15px;
+    border: 2px solid #e84445;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.detalle-botones {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-detalle {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 12px;
+    background: #e84445;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0px 0px 12px #000;
+}
+
+.btn-detalle:hover {
+    background: #802424;
+}
+
+/* RESPONSIVE */
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+
+    .detalle-contenedor {
+        padding: 25px;
+    }
+
+    .detalle-titulo {
+        font-size: 2rem;
+    }
+
+    .detalle-texto h2,
+    .detalle-bloque h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-detalle {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
