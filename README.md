@@ -10,6 +10,7 @@ Este es mi portfolio personal, desarrollado desde cero utilizando HTML, CSS y Ja
 Mi objetivo con este proyecto es presentar de forma clara y visual mi recorrido profesional, mis habilidades, mis proyectos y mis datos de contacto.
 
 El diseño está enfocado en:
+
 ✔️ Simplicidad y claridad
 
 ✔️ Responsive completo para todas las pantallas
@@ -47,22 +48,39 @@ Deploy realizado con Netlify.
 
 📁 Estructura del proyecto
 /
+
 │── css/
+
 │     ├── style.css
+
 │── img/
+
 │     ├── copy.png
+
 │     ├── favicon.png
+
 │     ├── fotoManuela.jpg
+
 │     ├── logo.png
+
 │     ├── mockupProyectoPortfolio.png
+
 │     ├── proyectoPortfolio.png
+
 │     └──  proyectoPortfolioReact.png
+
 │── projects/
+
 │     ├── proyecto1.html
+
 │     └── proyecto2.html
+
 │── index.html
+
 │── script.js
+
 └── README.md
+
 
 🔧 Cómo ejecutarlo en local
 
@@ -90,10 +108,15 @@ O simplemente haz doble clic en index.html.
 👩‍💻 Autora
 
 Manuela Mendoza Barba
+
 Desarrolladora Web Junior
+
 📧 manuela.mendoza.dev@gmail.com
+
 🔗 Portfolio: https://portfolio-manuela-mendoza.netlify.app
+
 🔗 LinkedIn: https://www.linkedin.com/in/manuela-mendoza-barba
+
 🔗 GitHub: https://github.com/manuela217
 
 ⭐ Si te gusta…
