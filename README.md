@@ -11,8 +11,11 @@ Mi objetivo con este proyecto es presentar de forma clara y visual mi recorrido 
 
 El diseño está enfocado en:
 ✔️ Simplicidad y claridad
+
 ✔️ Responsive completo para todas las pantallas
+
 ✔️ Animaciones suaves y contenido organizado
+
 ✔️ Una experiencia agradable tanto para empresas como para usuarios
 
 🔗 Demo Online
